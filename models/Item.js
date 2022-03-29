@@ -34,4 +34,6 @@ Item.init(
         underscored: true,
         modelName: 'item'
     }
-)
+);
+
+module.exports = Item;
