@@ -1,7 +1,8 @@
+// Define global variables
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// GET All Users
+// Define route for GET All Users
 router.get('/', (req, res) => {
     User.findAll({
       attributes: { exclude: ['password'] }
@@ -13,4 +14,5 @@ router.get('/', (req, res) => {
       });
 });
 
+// Export variables
 module.exports = router;

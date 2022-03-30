@@ -1,12 +1,15 @@
+// Define global variables
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// Define class variable
 class User extends Model {
     checkPassword(loginPassword) {
       return bcrypt.compareSync(loginPassword, this.password);
     }
 }
 
+// Initialize class variable
 User.init(
     {
       id: {
@@ -60,5 +63,6 @@ User.init(
     }
   );
   
+  // Export class variable
   module.exports = User;
   

@@ -11,4 +11,5 @@ const sequelize = process.env.JAWSDB_URL
       port: 3306
     });
 
+// Export varibles
 module.exports = sequelize;
