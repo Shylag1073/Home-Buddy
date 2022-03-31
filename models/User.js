@@ -1,10 +1,11 @@
 // Define global variables
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const bcrypt = require('bcrypt');
 
 // Define class variable
 class User extends Model {
-    checkPassword(loginPassword) {
+    checkPW(loginPassword) {
       return bcrypt.compareSync(loginPassword, this.password);
     }
 }
@@ -34,7 +35,7 @@ User.init(
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [12]
+          len: [8]
         }
       },
       space_name: {
