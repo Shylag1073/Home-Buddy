@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
     });
 });
  // get schedule by item Id 
-router.get('/:id', (req, res) => {
+router.get('/:item_id', (req, res) => {
  Schedule.findOne ({
      where: {id: req.params.id},
      include:[
@@ -69,7 +69,7 @@ router.post('/new', (req, res) => {
 });
 // edit schedule 
 
-router.put('/:id', (req, res) => {
+router.put('/item_id', (req, res) => {
     Schedule.update(
     {
         item_id: req.body.item_id,
@@ -97,9 +97,9 @@ router.put('/:id', (req, res) => {
 });
 // delete schedule 
 
-router.delete('/:id', (req, res) => {
+router.delete('/item_id', (req, res) => {
     Schedule.destroy({
-            where: { id: req.params.id },
+            where: { schedule_date: req.params.schedule_date },
         })
         
         .then ((dbScheduleData) => {
