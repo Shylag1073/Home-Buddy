@@ -1,55 +1,51 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+// Define global variables
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-class Schedule extends Model { }
+// Define class variable
+class Schedule extends Model {}
 
+// Initialize class variable
 Schedule.init(
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    date_due: {
-      //type: ???
-      allowNull: false,
-      //validate: {isDate???}
-    },
-    action: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    notes: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    status: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: "To Do",
-    },
-    item_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "item",
-        key: "id",
+    {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
       },
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "user",
-        key: "id",
+      schedule_date: {
+        type: DataTypes.DATEONLY,
+        allowNull: false
       },
+      item_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'item',
+          key: 'id'
+        }
+      },
+      action: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      notes: {
+        type: DataTypes.TEXT,
+        allowNull: true
+      },
+      status: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: "To-Do"
+      }
     },
-  },
-  {
-    sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: "schedule",
-  }
+    {
+      sequelize,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'schedule'
+    }
 );
 
+// Export class variable
 module.exports = Schedule;
