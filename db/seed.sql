@@ -2,7 +2,7 @@
 -- 1. Login to mysql as root and source the schema.sql file.
 -- 2. In mysql as root run "CREATE USER IF NOT EXISTS 'homebuddy'@'localhost' IDENTIFIED BY 'homebuddy';"
 -- 3. In mysql aw root run "GRANT ALL ON home_buddy_db.* TO 'homebuddy'@'localhost';"
--- 4. Exit out of mysql and log back in as the homebuddy user.
+-- 4. Exit out of mysql and log back in as the homebuddy user. (password homebuddy)
 -- 5. In vscode make sure force is set to true in server.js file.
 -- 6. In vscode run "npm start" to start the application. This will drop and re-create all the tables.
 -- 7. In mysql source the seed.sql file (this file).
