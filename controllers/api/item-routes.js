@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { User, Item, Schedule } = require("../../models");
-const sequelize = require("../../config/connection");
 
 //get all items
 router.get('/', (req, res) => {
