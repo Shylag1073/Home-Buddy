@@ -1,6 +1,6 @@
 // Define global variables
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Item, Schedule } = require('../../models');
 
 // Define route for GET All Users
 router.get('/', (req, res) => {
@@ -77,26 +77,25 @@ router.post('/login', (req, res) => {
       return;
     }
 
-    //req.session.save(() => {
-      //req.session.user_id = dbUserData.id;
-      //req.session.username = dbUserData.username;
-      //req.session.loggedIn = true;
-  
+    req.session.save(() => {
+      req.session.user_id = dbData.id;
+      req.session.username = dbData.username;
+      req.session.loggedIn = true;
       res.json({ user: dbData, message: 'You are logged in!' });
-    //});
+    });
   });
 });
 
 // Logout
 router.post('/logout', (req, res) => {
-  //if (req.session.loggedIn) {
-    //req.session.destroy(() => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
       res.status(204).end();
-    //});
-  //}
-  //else {
-    //res.status(404).end();
-  //}
+    });
+  }
+  else {
+    res.status(404).end();
+  }
 });
 
 // UPDATE User
