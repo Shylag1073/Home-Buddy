@@ -39,17 +39,17 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // expects {username: 'someusername', email: 'someemail@gmail.com', password: 'somepassword'}
   User.create({
-    username: req.body.username,
+    username: req.body.email,
     email: req.body.email,
     password: req.body.password
   })
     .then(dbData => {
-      //req.session.save(() => {
-        //req.session.user_id = dbData.id;
-        //req.session.username = dbData.username;
-        //req.session.loggedIn = true;
+      req.session.save(() => {
+        req.session.user_id = dbData.id;
+        req.session.username = dbData.username;
+        req.session.loggedIn = true;
         res.json(dbData);
-      //});
+      });
     })
     .catch(err => {
       console.log(err);
