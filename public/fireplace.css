@@ -1,18 +1,18 @@
-.dashboardPageAC {
+.dashboardPageFB {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-image: url(https://www.forbes.com/advisor/wp-content/uploads/2021/07/featured-image-ac.jpeg.jpg);
+    background-image: url(http://dev.dkiservices.com/wp-content/uploads/2018/12/GettyImages-911008310.jpg);
     background-size: cover;
     height: 600px;
     flex: auto;
   }
   
-  .dashboardPageAC h1 {
+  .dashboardPageFB h1 {
     font-size: 30px;
     width: 200px;
     margin-left: 20px;
   }
   
-  .dashboardHeaderAC {
+  .dashboardHeaderFB {
     border: solid 2px black;
     background-color: #136bc2;
     color: white;
@@ -23,7 +23,7 @@
     font-size: 20px;
   }
   
-  .logoutBtnAC {
+  .logoutBtnFB {
     border-left: solid black 2px;
     text-align: center;
     padding: 20px 45px 0px 50px;
@@ -31,13 +31,13 @@
     margin-left: 70%;
   }
   
-  .logoutBtnAC:hover {
+  .logoutBtnFB:hover {
     color: black;
     background-color:#3697f8;
     cursor: pointer;
   }
   
-  .iconsAC {
+  .iconsFB {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +50,7 @@
     border-right: solid black 2px;
   }
   
-  .acIconAC {
+  .acIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -59,6 +59,23 @@
     margin: 50px;
     background-image: url(https://www.iconpacks.net/icons/2/free-air-conditioner-icon-1838-thumb.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .fireplaceIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4343/4343537.png);
+    background-size: 150px 120px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3697f8;
@@ -77,24 +94,7 @@
     justify-content: center
   }
   
-  .fireplaceIconAC {
-    border: solid black 1.5px;
-    border-radius: 50px;
-    width: 180px;
-    height: 150px;
-    padding: 10px;
-    margin: 50px;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/4343/4343537.png);
-    background-size: 150px 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  
-  .gasIconAC {
+  .gasIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -111,7 +111,7 @@
     justify-content: center
   }
   
-  .lawnIconAC {
+  .lawnIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -128,7 +128,7 @@
     justify-content: center
   }
   
-  .trashIconAC {
+  .trashIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -145,7 +145,7 @@
     justify-content: center
   }
   
-  .waterIconAC {
+  .waterIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -162,7 +162,7 @@
     justify-content: center
   }
   
-  .phoneIconAC {
+  .phoneIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -179,7 +179,7 @@
     justify-content: center
   }
   
-  .addIconAC {
+  .addIconFB {
     border: solid black 1.5px;
     border-radius: 50px;
     width: 180px;
@@ -196,10 +196,10 @@
     justify-content: center
   }
   
-  .acIconAC a:hover{
+  .acIconFB a:hover{
     color: white;
   }
-  .fireplaceIconAC:hover{
+  .acIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -212,10 +212,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .fireplaceIconAC a:hover{
+  .fireplaceIconFB a:hover{
     color: white;
   }
-  .gasIconAC:hover{
+  .gasIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -228,10 +228,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .gasIconAC a:hover{
+  .gasIconFB a:hover{
     color: white;
   }
-  .lawnIconAC:hover{
+  .lawnIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -244,10 +244,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .lawnIconAC a:hover{
+  .lawnIconFB a:hover{
     color: white;
   }
-  .trashIconAC:hover{
+  .trashIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -260,10 +260,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .trashIconAC a:hover{
+  .trashIconFB a:hover{
     color: white;
   }
-  .waterIconAC:hover{
+  .waterIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -276,10 +276,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .waterIconAC a:hover{
+  .waterIconFB a:hover{
     color: white;
   }
-  .phoneIconAC:hover{
+  .phoneIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -292,10 +292,10 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .phoneIconAC a:hover{
+  .phoneIconFB a:hover{
     color: white;
   }
-  .addIconAC:hover{
+  .addIconFB:hover{
     animation: pulse 0.85s ease infinite alternate;
     cursor: pointer;
     box-shadow:
@@ -308,7 +308,7 @@
     -5px 0 20px  #3697f8,      
     5px 0 20px rgb(0, 255, 255);
   }
-  .addIconAC a:hover{
+  .addIconFB a:hover{
     color: white;
   }
   
@@ -321,12 +321,12 @@
     }
   }
   
-  .iconContainerAC {
+  .iconContainerFB {
     display: flex;
     height: 520px;
   }
   
-  .acSchedules {
+  .fireplaceSchedules {
     border: solid black 2px;
     border-radius: 50px;
     background-color: rgba(19, 107, 194, 0.85);
@@ -338,7 +338,7 @@
     color: white;
   }
   
-  .acSchedules h2 {
+  .fireplaceSchedules h2 {
     border: solid black 2px;
     border-radius: 50px;
     background-color: rgba(19, 107, 194, 0.55);
@@ -346,60 +346,60 @@
     padding: 20px;
   }
   
-  .acSchedulesList {
+  .fireplaceSchedulesList {
     display: flex;
     flex-direction: row;
     margin: 10px;
     padding: 10px;
   }
   
-  .acSchedulesList h6 {
-    margin: 0px 4% 20px 4%;
+  .fireplaceSchedulesList h6 {
+    margin: 0px 6% 20px 6%;
   }
   
-  .acIconAC a {
+  .acIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .fireplaceIconAC a {
+  .fireplaceIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .gasIconAC a {
+  .gasIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .lawnIconAC a {
+  .lawnIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .trashIconAC a {
+  .trashIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .waterIconAC a {
+  .waterIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .phoneIconAC a {
+  .phoneIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
   }
   
-  .addIconAC a {
+  .addIconFB a {
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
