@@ -44,6 +44,34 @@ app.get("/dashboard/air-conditioner", (req, res) => {
   res.render("air-conditioner", {});
 });
 
+app.get("/dashboard/fireplace", (req, res) => {
+  res.render("fireplace", {});
+});
+
+app.get("/dashboard/gas", (req, res) => {
+  res.render("gas", {});
+});
+
+app.get("/dashboard/lawn", (req, res) => {
+  res.render("lawn", {});
+});
+
+app.get("/dashboard/trash", (req, res) => {
+  res.render("trash", {});
+});
+
+app.get("/dashboard/water-tank", (req, res) => {
+  res.render("water-tank", {});
+});
+
+app.get("/dashboard/phone", (req, res) => {
+  res.render("phone", {});
+});
+
+app.get("/dashboard/add", (req, res) => {
+  res.render("add", {});
+});
+
 app.listen(port, () => console.log(`App listening to port ${port}`));
 
 app.set("view engine", "hbs");
