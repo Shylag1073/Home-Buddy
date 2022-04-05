@@ -443,7 +443,7 @@ a:link a:visited a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   width: 25%;
-  height: 87%;
+  height: 520px;
   background-color: #136bc2;
   overflow: auto;
   white-space: nowrap;
@@ -460,6 +460,8 @@ a:link a:visited a:hover {
   margin: 50px;
   background-image: url(https://www.iconpacks.net/icons/2/free-air-conditioner-icon-1838-thumb.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fireplaceIconAC {
@@ -595,7 +597,16 @@ a:link a:visited a:hover {
   }
 }
 
+.iconContainerAC {
+  display: flex;
+  height: 520px;
+}
+
 .acSchedules {
   border: solid black 3px;
-  width: 50%;
+  width: 60%;
+  align-self: flex-end;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
