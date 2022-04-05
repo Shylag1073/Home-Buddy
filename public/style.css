@@ -401,7 +401,7 @@ a:link a:visited a:hover {
 /* Start of AC Dashboard */
 .dashboardPageAC {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-image: url(https://wallpaperaccess.com/full/1639577.jpg);
+  background-image: url(https://www.forbes.com/advisor/wp-content/uploads/2021/07/featured-image-ac.jpeg.jpg);
   background-size: cover;
   height: 600px;
   flex: auto;
@@ -444,7 +444,7 @@ a:link a:visited a:hover {
   flex-wrap: wrap;
   width: 25%;
   height: 520px;
-  background-color: #136bc2;
+  background-color: rgba(19, 107, 194, 0.85);
   overflow: auto;
   white-space: nowrap;
   direction: rtl;
@@ -462,6 +462,7 @@ a:link a:visited a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #3697f8;
 }
 
 .fireplaceIconAC {
@@ -603,10 +604,33 @@ a:link a:visited a:hover {
 }
 
 .acSchedules {
-  border: solid black 3px;
+  border: solid black 2px;
+  border-radius: 50px;
+  background-color: rgba(19, 107, 194, 0.85);
   width: 60%;
   align-self: flex-end;
   height: 400px;
   margin-left: 50px;
   margin-bottom: 20px;
+  color: white;
+}
+
+.acSchedules h2 {
+  border: solid black 2px;
+  border-radius: 50px;
+  background-color: rgba(19, 107, 194, 0.55);
+  margin: 20px;
+  padding: 20px;
+}
+
+.acSchedulesList {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+
+.acSchedulesList h6 {
+  margin: 0px 4% 20px 4%;
+
 }
