@@ -19,8 +19,7 @@ async function signupHandler(event) {
         });
 
         if (response.ok) {
-            //document.location.replace('/dashboard');
-            alert("Signup successful!");
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }

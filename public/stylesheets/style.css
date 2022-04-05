@@ -69,7 +69,45 @@ a:link a:visited a:hover {
 #loginBtnHome:hover {
     background-color: rgba(0, 110, 255, 0.8);
     color: black;
-  }
+}
+
+#logoutBtn {
+  background-color: rgba(0, 83, 190, 0.8);
+  border: solid 3px black;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#logoutBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+#logoutBtn:hover {
+  background-color: rgba(0, 110, 255, 0.8);
+  color: black;
+}
+
+#dashboardBtn {
+  background-color: rgba(0, 83, 190, 0.8);
+  border: solid 3px black;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#dashboardBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+#dashboardBtn:hover {
+  background-color: rgba(0, 110, 255, 0.8);
+  color: black;
+}
 
 #signupBtn {
   background-color: rgba(0, 83, 190, 0.8);
@@ -236,6 +274,11 @@ a:link a:visited a:hover {
   align-items: stretch;
   height: 80px;
   font-size: 20px;
+}
+
+.dashboardHeader a {
+  color: white;
+  text-decoration: none;
 }
 
 .logoutBtn {
