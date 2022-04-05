@@ -6,10 +6,14 @@ const path = require("path");
 
 app.set("view engine", "handlebars");
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 app.engine(
   "handlebars",
   engine({
     layoutsDir: __dirname + "/views/layouts",
+    layoutsDir: __dirname + "/views/partials",
   })
 );
 
@@ -21,7 +25,23 @@ app.get("/static", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("main", { layout: "index" });
+  res.render("index", { layout: "main" });
+});
+
+app.get("/signup", (req, res) => {
+  res.render("signup", {});
+});
+
+app.get("/login", (req, res) => {
+  res.render("login", {});
+});
+
+app.get("/dashboard", (req, res) => {
+  res.render("dashboard", {});
+});
+
+app.get("/dashboard/air-conditioner", (req, res) => {
+  res.render("air-conditioner", {});
 });
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
@@ -32,31 +52,7 @@ app.engine(
   "hbs",
   engine({
     layoutsDir: __dirname + "/views/layouts",
+    layoutsDir: __dirname + "/views/partials",
     extname: "hbs",
   })
 );
-
-app.engine(
-  "hbs",
-  engine({
-    layoutsDir: __dirname + "/views/layouts",
-    extname: "hbs",
-    defaultLayout: "alternate",
-  })
-);
-app.get("/", (req, res) => {
-  res.render("main");
-});
-
-app.engine(
-  "hbs",
-  engine({
-    layoutsDir: __dirname + "/views/layouts",
-    extname: "hbs",
-    defaultLayout: "alternate",
-    partialsDir: __dirname + "/views/partials/",
-  })
-);
-app.get("/", (req, res) => {
-  res.render("main", { layout: "index" });
-});
