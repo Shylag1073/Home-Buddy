@@ -648,6 +648,10 @@ a:link a:visited a:hover {
   0 0 20px rgb(255, 255, 255),            
   -5px 0 80px  #3697f8,      
   5px 0 80px rgb(0, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .fireplaceIconAC {
@@ -661,6 +665,10 @@ a:link a:visited a:hover {
   background-size: 150px 120px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .gasIconAC {
@@ -674,6 +682,10 @@ a:link a:visited a:hover {
   background-size: 150px 130px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .lawnIconAC {
@@ -687,6 +699,10 @@ a:link a:visited a:hover {
   background-size: 140px 120px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .trashIconAC {
@@ -700,6 +716,10 @@ a:link a:visited a:hover {
   background-size: 150px 120px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .waterIconAC {
@@ -713,6 +733,10 @@ a:link a:visited a:hover {
   background-size: 180px 150px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .phoneIconAC {
@@ -726,6 +750,10 @@ a:link a:visited a:hover {
   background-size: 140px 110px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .addIconAC {
@@ -739,35 +767,126 @@ a:link a:visited a:hover {
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
+.acIconAC a:hover{
+  color: white;
+}
 .fireplaceIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.fireplaceIconAC a:hover{
+  color: white;
 }
 .gasIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.gasIconAC a:hover{
+  color: white;
 }
 .lawnIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.lawnIconAC a:hover{
+  color: white;
 }
 .trashIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.trashIconAC a:hover{
+  color: white;
 }
 .waterIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.waterIconAC a:hover{
+  color: white;
 }
 .phoneIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.phoneIconAC a:hover{
+  color: white;
 }
 .addIconAC:hover{
   animation: pulse 0.85s ease infinite alternate;
   cursor: pointer;
+  box-shadow:
+  inset 0 0 5px rgb(255, 255, 255),     
+  inset 5px 0 10px #3697f8,  
+  inset -5px 0 10px rgb(0, 255, 255), 
+  inset 5px 0 3px  #3697f8, 
+  inset -5px 0 5px rgb(0, 255, 255), 
+  0 0 10px rgb(255, 255, 255),            
+  -5px 0 20px  #3697f8,      
+  5px 0 20px rgb(0, 255, 255);
+}
+.addIconAC a:hover{
+  color: white;
 }
 
 @keyframes pulse {
@@ -813,4 +932,52 @@ a:link a:visited a:hover {
 
 .acSchedulesList h6 {
   margin: 0px 4% 20px 4%;
+}
+
+.acIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.fireplaceIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.gasIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.lawnIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.trashIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.waterIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.phoneIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.addIconAC a {
+  padding: 60px 55px 60px 55px;
+  color: white;
+  font-weight: bold;
 }
