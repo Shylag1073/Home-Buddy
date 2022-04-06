@@ -59,6 +59,7 @@
     margin: 20px;
     padding: 20px;
     cursor: pointer;
+    color: white;
   }
   
   #loginBtnHome:hover {
@@ -73,6 +74,7 @@
     margin: 20px;
     padding: 20px;
     cursor: pointer;
+    color: white;
   }
   
   #signupBtn:hover {
@@ -123,6 +125,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
+  }
+
+  #signinBtn a {
+    color: white;
+    padding: 18px 200px 18px 200px;
   }
   
   #signinBtn:hover {
@@ -186,6 +193,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
+  }
+
+  #loginBtn a {
+    color: white;
+    padding: 18px 210px 18px 210px;
   }
   
   #loginBtn:hover {
