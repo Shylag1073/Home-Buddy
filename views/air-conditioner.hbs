@@ -1,10 +1,10 @@
 <section class="dashboardPageAC">
   <div class="dashboardHeaderAC">
     <div>
-      <img src="/images/Home Buddy-logos.jpeg" alt="logo" />
+      <!-- <img src="/images/Home Buddy-logos.jpeg" alt="logo" /> -->
       <h1>Home Buddy</h1>
     </div>
-    <div class="logoutBtnAC">
+    <div id="logoutBtn" class="logoutBtnAC">
       Logout
     </div>
   </div>
@@ -37,13 +37,30 @@
     </section>
     <div class="acSchedules">
       <h2>Schedules:</h2>
-      <div class="acSchedulesList">
-        <h6>Date:</h6>
-        <h6>Action:</h6>
-        <h6>Item Info:</h6>
-        <h6>Notes:</h6>
-        <h6>Status:</h6>
-      </div>
+      
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Action</th>
+            <th scope="col">Item Info</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each schedules as |schedule|}}
+          <tr>
+            <td>{{schedule_date}}</td>
+            <td>{{action}}</td>
+            <td>{{item.item_info}}</td>
+            <td>{{notes}}</td>
+            <td>{{status}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
+<script src="/javascript/logout.js"></script>

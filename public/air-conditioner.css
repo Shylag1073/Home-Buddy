@@ -10,6 +10,8 @@
     font-size: 30px;
     width: 200px;
     margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   
   .dashboardHeaderAC {
@@ -403,4 +405,8 @@
     padding: 60px 55px 60px 55px;
     color: white;
     font-weight: bold;
+  }
+
+  td {
+    color: white;
   }

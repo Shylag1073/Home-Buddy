@@ -51,6 +51,43 @@ router.get('/byitem/:item_id', (req, res) => {
 });
 });
 
+// get All schedules by item Id 
+router.get('/air-conditioner', (req, res) => {
+    console.log("===== Username: " + req.session.username + "=====");
+    Schedule.findAll ({
+       attributes: [
+           'id',
+           'schedule_date',
+           'item_id',
+           'action',
+           'notes',
+           'status',
+           'created_at'
+       ],
+       include:[
+           {
+               model: Item,
+               attributes: ["item_name","item_info"],
+               where: {
+                item_name: 'air-conditioner',
+                //item_info: req.session.username
+                item_info: 'tjefferson@usa.gov'
+                }
+           },
+       ],
+    }) .then ((dbScheduleData) => {
+        if(!dbScheduleData) {
+            res.status(404).json({message:"No schedule found for this item."});
+            return;
+        }
+        res.json(dbScheduleData);
+    })
+    .catch((err) =>{
+       console.log(err);
+       res.status(500).json(err);
+   });
+});
+
 // get One schedule by Id 
 router.get('/:id', (req, res) => {
     Schedule.findOne ({

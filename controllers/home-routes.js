@@ -1,7 +1,7 @@
 // Define global variables
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { User, Item, Schedule } = require('../models');
 
 router.get("/static", (req, res) => {
     res.render("static");
@@ -23,8 +23,42 @@ router.get("/dashboard", (req, res) => {
     res.render("dashboard", {});
 });
 
-router.get("/dashboard/air-conditioner", (req, res) => {
-    res.render("air-conditioner", {});
+//router.get("/dashboard/air-conditioner", (req, res) => {
+//    Schedule.findall
+//    res.render("air-conditioner", {});
+//});
+
+router.get('/dashboard/air-conditioner', (req, res) => {
+    console.log("===== Username: " + req.session.username + "=====");
+    Schedule.findAll ({
+       attributes: [
+           'id',
+           'schedule_date',
+           'item_id',
+           'action',
+           'notes',
+           'status',
+           'created_at'
+       ],
+       include:[
+           {
+               model: Item,
+               attributes: ["item_name","item_info"],
+               where: {
+                item_name: 'air-conditioner',
+                item_info: req.session.username
+                //item_info: 'tjefferson@usa.gov'
+                }
+           },
+       ],
+    }) .then (dbScheduleData => {
+        const schedules = dbScheduleData.map(schedule => schedule.get({ plain: true }));
+        res.render('air-conditioner', { schedules });
+    })
+    .catch((err) =>{
+       console.log(err);
+       res.status(500).json(err);
+   });
 });
 
 router.get("/dashboard/fireplace", (req, res) => {

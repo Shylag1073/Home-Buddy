@@ -48,6 +48,21 @@ router.post('/', (req, res) => {
         req.session.user_id = dbData.id;
         req.session.username = dbData.username;
         req.session.loggedIn = true;
+        console.log("===== Adding Items =====");
+        Item.create({
+          item_name: "air-conditioner",
+          item_info: dbData.username,
+          user_id: dbData.id
+        })
+        .then(dbItemData => {
+          console.log("===== Adding Schedules =====");
+          Schedule.create({
+            item_id: dbItemData.id,
+            schedule_date: new Date(),
+            action: 'Change Air Filter',
+            notes: 'Filter model:'
+          })
+        })
         res.json(dbData);
       });
     })
