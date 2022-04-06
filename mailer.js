@@ -21,7 +21,7 @@ async function main() {
   let info = await transporter.sendMail({
     from: '"HomeBuddy 👻" <home.buddy123@yahoo.com>', // sender address
     to: "home.buddy123@yahoo.com", // list of receivers
-    subject: "Hello ✔", // Subject line
+    subject: "Hello its HomeBuddy! ", // Subject line
     text: "Hello world?", // plain text body
     html: "<b>Hello world?</b>", // html body
   });
