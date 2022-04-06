@@ -24,5 +24,11 @@ router.get('/dashboard', (req, res) => {
     });
 });
 
+router.get('/dashboard/air-conditioner', (req, res) => {
+    res.render('air-conditioner', {
+        loggedIn: req.session.loggedIn
+    });
+});
+
 // Export variables
 module.exports = router;
