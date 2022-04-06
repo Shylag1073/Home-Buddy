@@ -8,6 +8,15 @@
   
   .landingPage h1 {
     font-size: 30px;
+    margin: 10px;
+  }
+
+  .landingPageLogo {
+    width: 60px;
+    height: 60px;
+    background-image: url(\Home-Buddy-logos_white.png);
+    background-size: cover;
+    /* margin-left: 38.5%; */
   }
   
   .landingHeader {
@@ -16,6 +25,8 @@
     color: white;
     text-align: center;
     cursor: default;
+    display: flex;
+    flex-direction: row;
   }
   
   .landingSlogan {

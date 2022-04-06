@@ -2,25 +2,27 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     background-image: url(https://www.sandlwater.com/files/water%20heater.jpeg);
     background-size: cover;
-    height: 600px;
+    height: 584px;
     flex: auto;
   }
   
   .dashboardPageWT h1 {
     font-size: 30px;
-    width: 200px;
-    margin-left: 20px;
+    margin: 10px 0px 0px 7px;
   }
   
   .dashboardHeaderWT {
     border: solid 2px black;
     background-color: #136bc2;
     color: white;
+    text-align: center;
     cursor: default;
     display: flex;
-    align-items: stretch;
-    height: 80px;
-    font-size: 20px;
+    flex-direction: row;
+  }
+
+  .logoutBtnWT a {
+    color: white;
   }
   
   .logoutBtnWT {
