@@ -1,9 +1,12 @@
+// Global variables
 const express = require("express");
 const app = express();
-const port = 3001;
+//const port = 3001;
+const PORT = process.env.PORT || 3001;
 const { engine } = require("express-handlebars");
 const path = require("path");
 
+// Middleware
 app.set("view engine", "handlebars");
 
 app.use(express.json());
@@ -20,6 +23,19 @@ app.engine(
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("images"));
 
+
+app.set("view engine", "hbs");
+
+app.engine(
+  "hbs",
+  engine({
+    layoutsDir: __dirname + "/views/layouts",
+    layoutsDir: __dirname + "/views/partials",
+    extname: "hbs",
+  })
+);
+
+// Routes
 app.get("/static", (req, res) => {
   res.render("static");
 });
@@ -72,15 +88,11 @@ app.get("/dashboard/add", (req, res) => {
   res.render("add", {});
 });
 
-app.listen(port, () => console.log(`App listening to port ${port}`));
 
-app.set("view engine", "hbs");
 
-app.engine(
-  "hbs",
-  engine({
-    layoutsDir: __dirname + "/views/layouts",
-    layoutsDir: __dirname + "/views/partials",
-    extname: "hbs",
-  })
-);
+// Start the app
+//app.listen(port, () => console.log(`App listening to port ${port}`));
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
+});
+
