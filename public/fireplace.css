@@ -1,0 +1,406 @@
+.dashboardPageFB {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-image: url(http://dev.dkiservices.com/wp-content/uploads/2018/12/GettyImages-911008310.jpg);
+    background-size: cover;
+    height: 600px;
+    flex: auto;
+  }
+  
+  .dashboardPageFB h1 {
+    font-size: 30px;
+    width: 200px;
+    margin-left: 20px;
+  }
+  
+  .dashboardHeaderFB {
+    border: solid 2px black;
+    background-color: #136bc2;
+    color: white;
+    cursor: default;
+    display: flex;
+    align-items: stretch;
+    height: 80px;
+    font-size: 20px;
+  }
+  
+  .logoutBtnFB {
+    border-left: solid black 2px;
+    text-align: center;
+    padding: 20px 45px 0px 50px;
+    display: block;
+    margin-left: 70%;
+  }
+  
+  .logoutBtnFB:hover {
+    color: black;
+    background-color:#3697f8;
+    cursor: pointer;
+  }
+  
+  .iconsFB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 520px;
+    background-color: rgba(19, 107, 194, 0.85);
+    overflow: auto;
+    white-space: nowrap;
+    direction: rtl;
+    border-right: solid black 2px;
+  }
+  
+  .acIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://www.iconpacks.net/icons/2/free-air-conditioner-icon-1838-thumb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .fireplaceIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4343/4343537.png);
+    background-size: 150px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #3697f8;
+    box-shadow:
+    inset 0 0 10px rgb(255, 255, 255),     
+    inset 5px 0 40px #3697f8,  
+    inset -5px 0 40px rgb(0, 255, 255), 
+    inset 5px 0 20px  #3697f8, 
+    inset -5px 0 20px rgb(0, 255, 255), 
+    0 0 20px rgb(255, 255, 255),            
+    -5px 0 80px  #3697f8,      
+    5px 0 80px rgb(0, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .gasIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3100/3100641.png);
+    background-size: 150px 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .lawnIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/941/941923.png);
+    background-size: 140px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .trashIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://www.freeiconspng.com/thumbs/trash-can-icon/trash-can-icon-28.png);
+    background-size: 150px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .waterIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://www.freepnglogos.com/uploads/tank/water-tank-tank-train-icon-with-png-and-vector-format-16.png);
+    background-size: 180px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .phoneIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(http://assets.stickpng.com/thumbs/5a452598546ddca7e1fcbc80.png);
+    background-size: 140px 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .addIconFB {
+    border: solid black 1.5px;
+    border-radius: 50px;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    margin: 50px;
+    background-image: url(https://www.freepnglogos.com/uploads/plus-icon/plus-icon-plus-svg-png-icon-download-1.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .acIconFB a:hover{
+    color: white;
+  }
+  .acIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .fireplaceIconFB a:hover{
+    color: white;
+  }
+  .gasIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .gasIconFB a:hover{
+    color: white;
+  }
+  .lawnIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .lawnIconFB a:hover{
+    color: white;
+  }
+  .trashIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .trashIconFB a:hover{
+    color: white;
+  }
+  .waterIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .waterIconFB a:hover{
+    color: white;
+  }
+  .phoneIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .phoneIconFB a:hover{
+    color: white;
+  }
+  .addIconFB:hover{
+    animation: pulse 0.85s ease infinite alternate;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 5px rgb(255, 255, 255),     
+    inset 5px 0 10px #3697f8,  
+    inset -5px 0 10px rgb(0, 255, 255), 
+    inset 5px 0 3px  #3697f8, 
+    inset -5px 0 5px rgb(0, 255, 255), 
+    0 0 10px rgb(255, 255, 255),            
+    -5px 0 20px  #3697f8,      
+    5px 0 20px rgb(0, 255, 255);
+  }
+  .addIconFB a:hover{
+    color: white;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #136bc2;
+    }
+    100% {
+      background-color: #3697f8;
+    }
+  }
+  
+  .iconContainerFB {
+    display: flex;
+    height: 520px;
+  }
+  
+  .fireplaceSchedules {
+    border: solid black 2px;
+    border-radius: 50px;
+    background-color: rgba(19, 107, 194, 0.85);
+    width: 60%;
+    align-self: flex-end;
+    height: 400px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .fireplaceSchedules h2 {
+    border: solid black 2px;
+    border-radius: 50px;
+    background-color: rgba(19, 107, 194, 0.55);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .fireplaceSchedulesList {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .fireplaceSchedulesList h6 {
+    margin: 0px 6% 20px 6%;
+  }
+  
+  .acIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .fireplaceIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .gasIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .lawnIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .trashIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .waterIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .phoneIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .addIconFB a {
+    padding: 60px 55px 60px 55px;
+    color: white;
+    font-weight: bold;
+  }
