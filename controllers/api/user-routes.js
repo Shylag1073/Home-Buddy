@@ -60,7 +60,7 @@ router.post('/', (req, res) => {
             item_id: dbItemData.id,
             schedule_date: new Date(),
             action: 'Change Air Filter',
-            notes: 'Filter model:'
+            notes: 'Filter model: 12x25x1'
           })
         })
         res.json(dbData);
