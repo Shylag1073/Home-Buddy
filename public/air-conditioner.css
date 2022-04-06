@@ -410,3 +410,11 @@
   td {
     color: white;
   }
+
+  td a {
+    color: white;
+  }
+
+  td a:hover {
+    color: white;
+  }

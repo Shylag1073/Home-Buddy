@@ -61,6 +61,40 @@ router.get('/dashboard/air-conditioner', (req, res) => {
    });
 });
 
+router.get('/dashboard/air-conditioner/edit/:id', (req, res) => {
+    Schedule.findOne ({
+       attributes: [
+           'id',
+           'schedule_date',
+           'item_id',
+           'action',
+           'notes',
+           'status',
+           'created_at'
+       ],
+       where: {
+           id: req.params.id
+       },
+       include:[
+           {
+               model: Item,
+               attributes: ["item_name","item_info"]
+           },
+       ],
+    }) .then (dbScheduleData => {
+        if (dbScheduleData) {
+            const schedule = dbScheduleData.get({ plain: true });
+            res.render('air-conditioner-edit', { schedule });
+        } else {
+            res.status(404).end();
+        }
+    })
+    .catch((err) =>{
+       console.log(err);
+       res.status(500).json(err);
+   });
+});
+
 router.get("/dashboard/fireplace", (req, res) => {
     res.render("fireplace", {});
 });
