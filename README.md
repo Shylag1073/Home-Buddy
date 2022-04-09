@@ -5,7 +5,7 @@ This application will help homeowners and renters to  keep track of all the nece
 
 ##  💻 Website
 
-[Home Buddy]()
+[Home Buddy](https://home-buddy-usa.herokuapp.com/)
 
 ## 🧐 Installation 
 - You will need to install necessary dependencies by running the following command in your terminal
