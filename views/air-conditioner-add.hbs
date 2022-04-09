@@ -37,8 +37,9 @@
     </section>
     <div class="acSchedules">
       <h2>Schedules:</h2>
-      
-      <table class="table table-hover">
+      <form id="scheduleForm">
+        <input type="hidden" name="schedule_id" id="schedule_id" value="{{schedule.id}}" />
+      <table class="table table-sm table-hover">
         <thead class="thead-dark">
           <tr>
             <th scope="col">Date</th>
@@ -50,20 +51,19 @@
           </tr>
         </thead>
         <tbody>
-          {{#each schedules as |schedule|}}
           <tr>
-            <td>{{schedule_date}}</td>
-            <td>{{action}}</td>
-            <td>{{item.item_info}}</td>
-            <td>{{notes}}</td>
-            <td>{{status}}</td>
-            <td><a href="/dashboard/air-conditioner/edit/{{id}}">Edit</a></td>
+            <td><input type="text" size="3" value="{{schedule_date}}" name="schedule_date" id="schedule_date" /></td>
+            <td><input type="text" size="8" value="{{action}}" name="action" id="action" /></td>
+            <td>{{item_info}}</td>
+            <td><input type="text" size="8" value="{{notes}}" name="notes" id="notes" /></td>
+            <td><input type="text" size="3" value="{{status}}" name="status" id="status" /></td>
+            <td><input type="submit" value="Save" />
           </tr>
-          {{/each}}
         </tbody>
       </table>
-      <p class="addScheduleLink"><a href="/dashboard/air-conditioner/add">Add Schedule</a></p>
+      </form>
     </div>
   </div>
 </section>
 <script src="/javascript/logout.js"></script>
+<script src="/javascript/air-conditioner.js"></script>

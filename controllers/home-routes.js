@@ -23,11 +23,6 @@ router.get("/dashboard", (req, res) => {
     res.render("dashboard", {});
 });
 
-//router.get("/dashboard/air-conditioner", (req, res) => {
-//    Schedule.findall
-//    res.render("air-conditioner", {});
-//});
-
 router.get('/dashboard/air-conditioner', (req, res) => {
     console.log("===== Username: " + req.session.username + "=====");
     Schedule.findAll ({
@@ -93,6 +88,16 @@ router.get('/dashboard/air-conditioner/edit/:id', (req, res) => {
        console.log(err);
        res.status(500).json(err);
    });
+});
+
+router.get("/dashboard/air-conditioner/add", (req, res) => {
+    res.render("air-conditioner-add", { 
+        schedule_date: '2022-04-06',
+        action: 'Change Air Filter',
+        item_info: req.session.username,
+        notes: '',
+        status: 'To-Do'
+    });
 });
 
 router.get("/dashboard/fireplace", (req, res) => {

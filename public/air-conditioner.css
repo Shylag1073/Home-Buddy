@@ -418,3 +418,15 @@
   td a:hover {
     color: white;
   }
+
+  .addScheduleLink {
+    text-align: center;
+  }
+
+  .addScheduleLink a {
+    color: white;
+  }
+
+  .addScheduleLink a:hover {
+    color: white;
+  }
