@@ -1,0 +1,69 @@
+<section class="dashboardPageAC">
+  <div class="dashboardHeaderAC">
+    <div>
+      <!-- <img src="/images/Home Buddy-logos.jpeg" alt="logo" /> -->
+      <h1>Home Buddy</h1>
+    </div>
+    <div id="logoutBtn" class="logoutBtnAC">
+      Logout
+    </div>
+  </div>
+  <div class="iconContainerAC">
+    <section class="iconsAC">
+      <div class="acIconAC">
+        <a href="/dashboard/air-conditioner" style="text-decoration: none;">Air Conditioner</a>
+      </div>
+      <div class="fireplaceIconAC">
+        <a href="/dashboard/fireplace" style="text-decoration: none;">Fireplace</a>
+      </div>
+      <div class="gasIconAC">
+        <a href="/dashboard/gas" style="text-decoration: none;">Gas</a>
+      </div>
+      <div class="lawnIconAC">
+        <a href="/dashboard/lawn" style="text-decoration: none;">Lawn</a>
+      </div>
+      <div class="trashIconAC">
+        <a href="/dashboard/trash" style="text-decoration: none;">Trash</a>
+      </div>
+      <div class="waterIconAC">
+        <a href="/dashboard/water-tank" style="text-decoration: none;">Water Tank</a>
+      </div>
+      <div class="phoneIconAC">
+        <a href="/dashboard/phone" style="text-decoration: none;">Phone</a>
+      </div>
+      <div class="addIconAC">
+        <a href="/dashboard/add" style="text-decoration: none;">Add</a>
+      </div>
+    </section>
+    <div class="acSchedules">
+      <h2>Schedules:</h2>
+      
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Action</th>
+            <th scope="col">Item Info</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each schedules as |schedule|}}
+          <tr>
+            <td>{{schedule_date}}</td>
+            <td>{{action}}</td>
+            <td>{{item.item_info}}</td>
+            <td>{{notes}}</td>
+            <td>{{status}}</td>
+            <td><a href="/dashboard/air-conditioner/edit/{{id}}">Edit</a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <p class="addScheduleLink"><a href="/dashboard/air-conditioner/add">Add Schedule</a></p>
+    </div>
+  </div>
+</section>
+<script src="/javascript/logout.js"></script>
